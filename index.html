@@ -21,9 +21,6 @@
             scroll-behavior: smooth;
         }
 
-        /* -------------------------------------
-           HEADER
-        -------------------------------------- */
         nav {
             position: relative;
             height: 30vh;
@@ -67,9 +64,6 @@
             border-radius: 5px;
         }
 
-        /* -------------------------------------
-           SOCIALS BAR
-        -------------------------------------- */
         .socials-bar {
             margin-top: 40px;
             display: flex;
@@ -105,9 +99,6 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         }
 
-        /* -------------------------------------
-           MAIN CONTENT
-        -------------------------------------- */
         .big-wrapper {
             margin-top: 50px;
             width: 90%;
@@ -147,7 +138,6 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
-            /* slightly smaller gap like in your image */
             width: 100%;
             max-width: 600px;
         }
@@ -158,9 +148,7 @@
             gap: 20px;
             padding: 15px 20px;
             background: #e9dccf;
-            /* pastel beige background like your image */
             border: 2px solid #d46b90;
-            /* border color like your screenshot */
             border-radius: 12px;
             text-decoration: none;
             color: #1c1c1c;
@@ -178,7 +166,6 @@
 
         .link-bar span {
             flex: 1;
-            /* ensures text is centered */
             text-align: center;
             font-size: 1.1rem;
         }
@@ -189,36 +176,16 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        /* Optional: sections for big buttons */
-        .section {
-            height: 400px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            font-weight: bold;
-            background: rgba(143, 143, 143, 0.2);
-            border-radius: 20px;
-            margin-bottom: 60px;
-        }
-
-        /* -------------------------------------
-   FOOTER
--------------------------------------- */
         footer {
             width: 100%;
             background: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(4px);
             padding: 30px 20px 15px 20px;
-            /* reduced top and bottom padding */
             text-align: center;
             box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.1);
             margin-top: 50px;
             font-size: 0.95rem;
-            /* slightly smaller text */
         }
-
 
         footer a {
             color: black;
@@ -230,12 +197,85 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        @media (max-width: 768px) {
+            nav {
+                height: 22vh;
+            }
+
+            nav ul {
+                justify-content: center;
+                gap: 6px;
+                padding: 8px 10px;
+            }
+
+            nav ul li a {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+
+            .socials-bar {
+                gap: 12px;
+                padding: 12px;
+                margin-top: 25px;
+            }
+
+            .profile-pic {
+                width: 70px;
+                height: 70px;
+            }
+
+            .big-wrapper {
+                margin-top: 30px;
+                padding: 40px 15px;
+                width: 95%;
+                border-radius: 20px;
+            }
+
+            .server-box {
+                width: 100%;
+                padding: 20px;
+                margin-bottom: 40px;
+            }
+
+            .server-box h2 {
+                font-size: 24px;
+            }
+
+            .server-box img {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .link-list {
+                max-width: 100%;
+                gap: 12px;
+            }
+
+            .link-bar {
+                gap: 14px;
+                padding: 12px 14px;
+            }
+
+            .link-bar img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .link-bar span {
+                font-size: 1rem;
+            }
+
+            footer {
+                padding: 20px 15px;
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -245,7 +285,6 @@
         </ul>
     </nav>
 
-    <!-- SOCIALS BAR -->
     <div class="socials-bar" id="socials-bar">
         <a href="https://www.tiktok.com/@themewdew?lang=en">Tiktok</a>
         <a href="https://www.youtube.com/@TheMewDew">YouTube</a>
@@ -255,36 +294,23 @@
         <a href="#">Subathon – OVER</a>
     </div>
 
-    <!-- MAIN CONTENT -->
     <div class="big-wrapper">
 
-        <!-- MINECRAFT SERVER -->
         <div class="server-box" id="minecraft-server">
             <h2>The Minecraft Server</h2>
             <p>Buzz.network</p>
-            <img src="MinecraftServerIP.gif" alt="Minecraft Server IP">
+            <img src="MinecraftServerIP.gif">
         </div>
 
-        <!-- BIG BUTTONS -->
         <div class="link-list">
-
             <a class="link-bar" href="https://pcpartpicker.com/b/f9TnTW" target="_blank">
                 <img src="mewdewpc.png">
                 <span>My Custom PC</span>
             </a>
 
-            <a class="link-bar"
-                href="https://www.amazon.com/shop/themewdew?ref_=cm_sw_r_cp_ud_aipsfshop_3K445CSX3123Q7PX6G2X&ccs_id=ed9ae629-d97f-40f4-80bf-025441f86979"
-                target="_blank">
+            <a class="link-bar" href="https://www.amazon.com/shop/themewdew" target="_blank">
                 <img src="Mewdewsetup.jpg">
                 <span>My Setup</span>
-            </a>
-            
-            <a class="link-bar"
-                href="https://store.lunarclient.com/partners/mewdew"
-                target="_blank">
-                <img src="Cape Edited.png">
-                <span>Buy My Cape!</span>
             </a>
 
             <a class="link-bar" href="https://cash.app/$TheMewDew" target="_blank">
@@ -296,12 +322,10 @@
                 <img src="MewdewWishlist.webp">
                 <span>My Wishlist</span>
             </a>
-
         </div>
 
     </div>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2025 Clouds56. All rights reserved.</p>
         <p>Official website for Mewdew - community</p>
@@ -313,13 +337,5 @@
         </p>
     </footer>
 
-
-
-
 </body>
-
-
 </html>
-
-
-
