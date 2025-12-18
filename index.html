@@ -113,8 +113,10 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
+        /* Fixed-width replaced with responsive */
         .server-box {
-            width: 800px;
+            width: 100%;
+            max-width: 800px;
             padding: 25px;
             background: rgba(255, 255, 255, 0.6);
             border-radius: 25px;
@@ -129,7 +131,8 @@
         }
 
         .server-box img {
-            width: 400px;
+            width: 100%;
+            max-width: 400px;
             border-radius: 20px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         }
@@ -198,6 +201,7 @@
             text-decoration: underline;
         }
 
+        /* Tablet */
         @media (max-width: 768px) {
             nav {
                 height: 22vh;
@@ -269,6 +273,62 @@
             footer {
                 padding: 20px 15px;
                 font-size: 0.85rem;
+            }
+        }
+
+        /* Mobile phones */
+        @media (max-width: 480px) {
+            nav {
+                height: 20vh;
+            }
+
+            nav ul {
+                gap: 6px;
+                padding: 6px 8px;
+            }
+
+            nav ul li a {
+                font-size: 0.8rem;
+                padding: 6px 8px;
+            }
+
+            .socials-bar {
+                gap: 10px;
+                padding: 10px;
+                border-radius: 12px;
+            }
+
+            .profile-pic {
+                width: 60px;
+                height: 60px;
+            }
+
+            .big-wrapper {
+                padding: 30px 12px;
+                border-radius: 16px;
+            }
+
+            .server-box h2 {
+                font-size: 20px;
+            }
+
+            .link-bar {
+                padding: 10px 12px;
+                gap: 10px;
+            }
+
+            .link-bar img {
+                width: 36px;
+                height: 36px;
+            }
+
+            .link-bar span {
+                font-size: 0.95rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+                padding: 15px 10px;
             }
         }
     </style>
@@ -344,4 +404,3 @@
 
 </body>
 </html>
-
