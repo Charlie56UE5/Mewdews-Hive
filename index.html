@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mewdews Hive</title>
-     <link rel="icon" type="image/png" href="PFP.jpeg">
+    <link rel="icon" type="image/png" href="PFP.jpeg">
+
     <style>
         * {
             box-sizing: border-box;
@@ -23,7 +24,7 @@
 
         nav {
             position: relative;
-            height: 30vh;
+            height: 30vh; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,11 +46,11 @@
 
         nav ul {
             list-style: none;
-            padding: 10px 15px;
+            padding: 10px 15px; 
             margin: 0;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 10px; 
             background: rgba(255, 255, 255, 0.4);
             border-radius: 10px;
             backdrop-filter: blur(4px);
@@ -66,6 +67,7 @@
             align-items: center;
         }
 
+        /* Socials bar */
         .socials-bar {
             margin-top: 40px;
             display: flex;
@@ -101,6 +103,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         }
 
+        /* Main wrapper */
         .big-wrapper {
             margin-top: 50px;
             width: 90%;
@@ -138,6 +141,7 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
         }
 
+        /* Link list */
         .link-list {
             display: flex;
             flex-direction: column;
@@ -180,6 +184,7 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
+        /* Footer */
         footer {
             width: 100%;
             background: rgba(255, 255, 255, 0.4);
@@ -202,20 +207,20 @@
             text-decoration: underline;
         }
 
+        
         @media (max-width: 768px) {
             nav {
-                height: 22vh;
+                height: 30vh;
             }
 
             nav ul {
-                justify-content: center;
-                gap: 6px;
-                padding: 8px 10px;
+                gap: 10px;
+                padding: 10px 15px;
             }
 
             nav ul li a {
-                padding: 8px 10px;
-                font-size: 0.9rem;
+                padding: 10px 15px;
+                font-size: 1rem;
             }
 
             .socials-bar {
@@ -278,23 +283,22 @@
 
         @media (max-width: 480px) {
             nav {
-                height: 20vh;
+                height: 30vh;
             }
 
             nav ul {
-                gap: 6px;
-                padding: 6px 8px;
+                gap: 10px;
+                padding: 10px 15px;
             }
 
             nav ul li a {
-                font-size: 0.8rem;
-                padding: 6px 8px;
+                padding: 10px 15px;
+                font-size: 1rem;
             }
 
             .socials-bar {
                 gap: 10px;
                 padding: 10px;
-                border-radius: 12px;
             }
 
             .profile-pic {
@@ -335,13 +339,17 @@
 
 <body>
 
-    <nav> <ul> <li><a href="index.html">Home</a>
-            </li> <li><a href="https://www.twitch.tv/themewdew" target="_blank">Mewdews Hive</a>
-            </li> <li><a href="#minecraft-server">Minecraft Server</a></li>
-            </li> <li><a href="#socials-bar">Socials</a>
-        </ul> 
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://www.twitch.tv/themewdew" target="_blank">Mewdews Hive</a></li>
+            <li><a href="#minecraft-server">Minecraft Server</a></li>
+            <li><a href="#socials-bar">Socials</a></li>
+        </ul>
     </nav>
 
+    <!-- Socials -->
     <div class="socials-bar" id="socials-bar">
         <a href="https://www.tiktok.com/@themewdew?lang=en">Tiktok</a>
         <a href="https://www.youtube.com/@TheMewDew">YouTube</a>
@@ -351,8 +359,8 @@
         <a href="#">Subathon – OVER</a>
     </div>
 
+    <!-- Main content -->
     <div class="big-wrapper">
-
         <div class="server-box" id="minecraft-server">
             <h2>The Minecraft Server</h2>
             <p>Buzz.network</p>
@@ -385,9 +393,9 @@
                 <span>My Wishlist</span>
             </a>
         </div>
-
     </div>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Clouds56. All rights reserved.</p>
         <p>Official website for Mewdew - community</p>
@@ -400,6 +408,5 @@
     </footer>
 
 </body>
+
 </html>
-
-
